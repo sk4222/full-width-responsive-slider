@@ -2,8 +2,8 @@ Full Width Responsive SKS_Slider
 A simple jquery full width slider
 
 Usage:
+HTML--->
 
-Include slider.css or slider.min.css and use the following html structure:
  <div id="sks_slideshow" class="sks_slideshow">               
                 <ul>
                     <li>
@@ -12,7 +12,6 @@ Include slider.css or slider.min.css and use the following html structure:
                             <p>Lorem ipsum dolor sit amet</p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </div>                    
-
                     </li>
                     <li><img src="./images/gta1.jpg" alt=""/>   <div class="sks_caption">  
                             <p>Lorem ipsum dolor sit amet</p>
@@ -33,12 +32,15 @@ Include slider.css or slider.min.css and use the following html structure:
             
 
 
+SliderInitialization:
 
-$(selector).fullWidth({
-    maxHeight   :   450, // maximum height of slider, px
-    minHeight   :   375, // minimum height of slider, px
-    delay       :   5000, // delay between slides, ms
-    transition  :   1000, // transition speed, ms
-    maxFont     :   36, // maximum font size, px
-    minFont     :   24 // minimum font size, px
-});
+    jQuery(document).ready(function() {
+                jQuery("#sks_slideshow").sks_slideshow({
+                    speed: 4000,
+                    duration: 1700,
+                    effect: 'easeInOutCirc',
+                    top_navigation: true,
+                    bottom_navigation: true
+                });
+
+            });
