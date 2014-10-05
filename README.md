@@ -4,7 +4,7 @@ A simple jquery full width slider
 Usage:
 HTML--->
 
- <div id="sks_slideshow" class="sks_slideshow">               
+            <div id="sks_slideshow" class="sks_slideshow">               
                 <ul>
                     <li>
                         <img src="./images/gta4.jpg" alt=""/>
@@ -28,8 +28,6 @@ HTML--->
                 </ul> 
                 <div class="" id="sks_loader"></div>
             </div>
-            
-            
 
 
 SliderInitialization:
